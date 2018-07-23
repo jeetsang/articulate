@@ -111,5 +111,19 @@ $(document).ready(function(){
 
   });
 
+  $(function(){
+      $('.v-shown').on('click',function(event){
+
+      	$('svg',this).toggleClass('svg-flip'),
+      	$(this).toggleClass('green-color');
+
+        event.preventDefault();
+        $(".container-versions").slideToggle(200);
+        
+
+      });
+
+  });
+
 
 });

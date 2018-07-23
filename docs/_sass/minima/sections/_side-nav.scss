@@ -25,13 +25,65 @@
     line-height: 1.3rem;
     padding: 0 20px;
     margin-bottom: 5px;
+
     a {
       font-size: 0.9rem;
       color: $primary-color;
       transition: all .3s ease-out;
       &:hover {
+        fill: $dark-green;
         color: $dark-green;
       }
+    }
+  }
+
+  .versions {
+
+    .svg-flip {
+      transform: rotateX(180deg);
+      fill: $accent-green;
+    }
+
+    .green-color{
+      color: $accent-green;
+    }
+
+    
+    svg {
+      vertical-align: middle;
+      padding-bottom: 2px;
+      transition: all .3s ease-out;
+
+    }
+
+    .v-shown {
+      display: block;
+      text-decoration: underline;
+    }
+
+    .container-versions {
+
+      display: none;
+      
+      padding: 5px 0 10px 20px;
+      background-color: #ebeef1;  
+
+      .master {
+        display: block;
+        margin: 10px 0;
+      }
+
+      li{
+      display: inline-block;
+      padding: 0 10px 0 0;
+      }
+
+
+    }
+
+    .selected {
+      color: $accent-green;
+
     }
   }
 
@@ -47,6 +99,7 @@
   .is-selected {
     border-right: 2px solid #00ca9f;
     a {
+
       font-weight: 500;
       color: $accent-green;
     }
